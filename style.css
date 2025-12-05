@@ -1,0 +1,237 @@
+* {
+    scrollbar-width: thin;
+    scrollbar-color: #318d74 #f1f1f1;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Navbar Styles */
+.navbar {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand img {
+    max-width: 60px;
+    height: auto;
+}
+
+.search-form {
+    background-color: #f9f9f9;
+    border-radius: 25px;
+    padding: 8px 16px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    max-width: 300px;
+    width: 100%;
+}
+
+.search-form input {
+    border: none;
+    background: transparent;
+    outline: none;
+    width: 100%;
+    font-size: 14px;
+}
+
+.search-form input::placeholder {
+    font-size: 12px;
+}
+
+.search-icon {
+    width: 20px;
+    height: 20px;
+}
+
+.profile-icon {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
+
+/* Starbucks Green Banner */
+.starbucks-green {
+    background-color: #1e3932;
+}
+
+/* Hero Banner */
+.hero-banner {
+    background-image: url('./images/imgi_22_BG_WEB_08b7ce409f.png');
+    background-size: cover;
+    background-position: top;
+    border-radius: 12px;
+    padding: 40px;
+    margin: 30px 0;
+    position: relative;
+    overflow: hidden;
+    min-height: 250px;
+}
+
+.hero-content {
+    position: relative;
+    top: 90%;
+    z-index: 1;
+}
+
+.hero-icon {
+    max-width: 100px;
+    height: auto;
+}
+
+/* Category Cards */
+.category-item {
+    text-align: center;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+}
+
+.category-item:hover {
+    transform: translateY(-5px);
+}
+
+.category-item img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    object-fit: cover;
+}
+
+/* Product Card */
+.product-card {
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+}
+
+.product-img {
+    width: 100%;
+    max-width: 100px;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.veg-icon {
+    width: 16px;
+    height: 16px;
+}
+
+/* Coffee Culture Section */
+.coffee-culture {
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+        url('./images/imgi_16_ICW_Live_Event_Day5_41f11ca3d2.jpg');
+    background-size: cover;
+    background-position: center;
+    border-radius: 12px;
+    padding: 60px 40px;
+    color: white;
+    min-height: 350px;
+    display: flex;
+    align-items: flex-end;
+}
+
+/* Footer */
+footer {
+    background-color: #1e3932;
+    color: white;
+    padding: 60px 0 20px;
+}
+
+footer a {
+    color: rgba(255, 255, 255, 0.8);
+    text-decoration: none;
+    transition: color 0.3s ease;
+    font-size: 14px;
+}
+
+footer a:hover {
+    color: white;
+}
+
+.footer-logo img {
+    max-width: 70px;
+    height: auto;
+}
+
+.social-icons a {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+.social-icon {
+    width: 32px;
+    height: 32px;
+}
+
+.app-store-badge {
+    max-width: 140px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 991px) {
+    .search-form {
+        max-width: 100%;
+        margin: 10px 0;
+    }
+
+    .hero-banner {
+        padding: 30px 20px;
+    }
+
+    .navbar-brand img {
+        max-width: 50px;
+    }
+}
+
+@media (max-width: 767px) {
+    .category-item img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .coffee-culture {
+        padding: 40px 20px;
+        min-height: 300px;
+    }
+
+    footer {
+        text-align: center;
+    }
+
+    .footer-column {
+        margin-bottom: 30px;
+    }
+
+    .hero-banner {
+        min-height: 200px;
+    }
+}
+
+@media (max-width: 575px) {
+    .hero-banner h2 {
+        font-size: 1.5rem;
+    }
+
+    .category-item img {
+        width: 70px;
+        height: 70px;
+    }
+
+    .coffee-culture {
+        min-height: 250px;
+        padding: 30px 15px;
+    }
+}
